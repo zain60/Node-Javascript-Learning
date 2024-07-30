@@ -9,7 +9,7 @@ A reusable chunk of code that has its own context/purpose . In node js each file
 2---------> BUilt-in Modules      == Modules node js ships out of the box /pre-written 
 3---------> Third party modules   == MOdules that written by  other developers and we can use in our   application
 
-//    ********************* Local-Modules  *********************//
+//    ********************* Local-Modules using Common js  *********************//
 
 
 1-each file in node js is  a module that is isolated by default
@@ -37,3 +37,10 @@ A reusable chunk of code that has its own context/purpose . In node js each file
 1- when we add a module in our file node js will cash(remmber) it.
 2- when we add same module  again in our file node js will take the cashed value instead of loading same module from start
 3- see Example Mddule-cashing
+
+
+//    ********************* CommonJS exporting  *********************//
+this are different pattrens to import and export a module in node js , common js and ES modules have therir own pattrens
+see difference in example
+
+
