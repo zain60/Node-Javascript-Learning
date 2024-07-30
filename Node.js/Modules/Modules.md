@@ -9,8 +9,9 @@ A reusable chunk of code that has its own context/purpose . In node js each file
 2---------> BUilt-in Modules      == Modules node js ships out of the box /pre-written 
 3---------> Third party modules   == MOdules that written by  other developers and we can use in our   application
 
+//   ///////////////////////---------------------------//////////////////////////
 //    ********************* Local-Modules using Common js  *********************//
-
+//   ///////////////////////---------------------------//////////////////////////
 
 1-each file in node js is  a module that is isolated by default
 2- we use require to load other module in our file
@@ -43,4 +44,21 @@ A reusable chunk of code that has its own context/purpose . In node js each file
 this are different pattrens to import and export a module in node js , common js and ES modules have therir own pattrens
 see difference in example
 
+//   ///////////////////////---------------------------//////////////////////////
+//    *********************       BUiltin-Modules         *********************//
+//   ///////////////////////--------------------------//////////////////////////
 
+MOdule that are built in by node js
+core moduls
+we need to import them before using them
+
+there are many modules but we will discuss a few here
+    ------------>path
+    ------------>events
+    ------------>fs
+    ------------>stream
+    ------------>http
+
+
+    ========> PATH ===> module provide utilities to work with different files and directories paths 
+    ========> Events ===> ALlow to work with events in node js,events are actions that  occured in our application to whom we can responce
