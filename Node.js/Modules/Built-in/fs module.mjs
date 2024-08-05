@@ -1,4 +1,5 @@
-const fs = require('fs');
+// const fs = require('fs');
+import fs from "fs"
 // reading Sync way
 
 
@@ -22,4 +23,6 @@ fs.readFile("./file.txt","utf-8",(error,data)=>{
    }
 })
 console.log("Third")
+
+
 
