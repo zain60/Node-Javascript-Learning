@@ -32,3 +32,28 @@ Overall it includes following  Components
                     // 3---------------> Js library
                                
 Node.js is not a language or a framework. It is a runtime environment that enables JavaScript to be executed server-side.
+
+
+//    ************* HOw code is Executed in node js {V8 -Engine}   ***************//
+
+
+ ...........................................................................................................
+                                                .
+                                                .
+                                                .
+           V8                                   .                                      LIBUV
+ ...........................................................................................................
+          MEMORY-HEAP                   .    CALL-STACK        .
+                                        .                      .
+  1-  Variable /function declaration    .                      .
+                                        .   pushed in call     .
+                                        .   stack and on       .
+                                        .   completion poped   .
+                                            off from call stack.
+                                                               .
+                                                               .
+                                                               .
+                                                               .
+    
+                                                                 1- when we  execute a async function it is offloaded from call stack to Libuv and libuv will put it into a threadpool , on completion it will be retuirned to call stack and then it will be poped off
+         
